@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width">
+		<title color="white"> Ariel's Page! </title>
+			<style>
+		p {
+			color:white;
+			font-family: "Times New Roman", Arial, Serif;
+		  }
+		h1  {
+				font-size:50px;
+				font-weight:strong;
+				letter-spacing:15px;
+				color:white;
+			}
+		.BT {
+				color:#00568f;
+				font-family: "Times New Roman", Serif;
+				font-size:20px;
+				font-weight:bold;
+		   }
+	</style>
+	<link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body background="img/ariel/ariel_page_background_image1.jpg">
+		<center>
+		<table align="center">
+			<tr align="center">
+			<td>
+				<a href="index.html"><img src="img/Home-Banner.png" id="homeBanner" title="Home Page" width="728px" height="90"></a>
+			<td>
+			</tr>
+			<tr align="center">
+					<td>
+						<ul>
+						<li><a href="index.html">Home</a> |</li>
+						<li><a href="contact.html">Contact</a> |</li>
+						<li><a href="videos.html">Videos</a> |</li>
+						<li><a href="downloads.html">Downloads</a> |</li>
+						<li><a class="active" href="Ariel.html">Temp</a> |</li>
+						<li><a href="register.html">Register</a> |</li>
+						<li><a href="games.html">Games</a> </li>
+					</ul>
+					</td>
+			</tr>
+			<tr align="center">
+			<td>
+				<img src="img/ariel/ariel-page-title-image1.png" title="" align"left"/>
+			<td>
+			</tr>
+		</table>	
+			<table>
+				<tr>
+					<td>
+						<p id="timenow" align="center"><font color="yellow"> Loading Time... </font></p> 
+					<script>
+							setInterval(function() {
+							document.getElementById('timenow').innerHTML = Date()
+							document.getElementById("timenow").style.color = "yellow";
+							}, 1000);
+							which = 1
+							setInterval(function(){
+								var whichBanner = document.getElementById("homeBanner");
+								if (which == 1){
+									whichBanner.src = "img/Home-Banner.png";
+									which = 2;
+								}
+								else if(which == 2){
+									whichBanner.src = "img/Home-Banner2.jpg";
+									which = 1;
+								}
+							}, 2000);
+					</script>
+					</td>
+				</tr>
+			</table>
+			<hr color="#00568f"/>
+			<hr color="#00568f"/>
+			<p><font size="18" color="#00568f" face="Times New Roman"><b> Current Favorite Songs </b></font></p>
+			<hr color="#00568f"/>
+			<hr color="#00568f"/>
+		</center>
+		<table border="20px" align="center">
+			<tr align="center">
+				<td colspam="1"> <p class="BT">Can't Fell My Face by The Weeknd</p> </td>
+				<td colspam="1"> <p class="BT">Crazy In Love by Eden</p> </td>
+				<td colspam="1"> <p class="BT">Crossfire by Stephen</p> </td>
+			</tr>
+			<tr>
+				<td colspan="1"> 
+					<video width="320" height="240" controls>
+					<source src="mp4/ariel/can't_feel_my_face.mp4" type="video/mp4">
+					Your browser does not support the video tag. </video>
+				</td>
+				<td colspan="1"> 
+					<video width="320" height="240" controls>
+					<source src="mp4/ariel/crazy_in_love.mp4" type="video/mp4">
+					Your browser does not support the video tag. </video>
+				</td>
+				<td colspan="1"> 
+					<video width="320" height="240" controls>
+					<source src="mp4/ariel/crossfire.mp4" type="video/mp4">
+					Your browser does not support the video tag. </video>
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspam="1"> <p class="BT">Drowning by Eden</p> </td>
+				<td colspam="1"> <p class="BT">Drugs by Eden</p> </td>
+				<td colspam="1"> <p class="BT">Wake Up by Eden</p> </td>
+			</tr>
+			<tr>
+				<td colspan="1"> 
+					<video width="320" height="240" controls>
+					<source src="mp4/ariel/drowning.mp4" type="video/mp4">
+					Your browser does not support the video tag. </video>
+				</td>
+				<td colspan="1"> 
+					<video width="320" height="240" controls loop>
+					<source src="mp4/ariel/drugs.mp4" type="video/mp4">
+					Your browser does not support the video tag. </video>
+				</td>
+				<td colspan="1"> 
+					<video width="320" height="240" controls>
+					<source src="mp4/ariel/wake_up.mp4" type="video/mp4">
+					Your browser does not support the video tag. </video>
+				</td>
+			</tr>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</table>
+		
+    </body>
+</html>

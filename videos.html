@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width">
+		<title color="white"> Brian's Website! </title>
+		<link href="index.css" rel="stylesheet" type="text/css" />
+		<script src="index.js"></script>
+    </head>
+    <body background="img/home_page_background.jpg">
+		<center>
+			<table align="center">
+				<tr>
+					<td>
+						<a href="index.html"><img src="img/Home-Banner.png" id="homeBanner" title="Home Page" width="728px" height="90"></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p id="timenow" align="center"><font color="yellow"> Loading Time... </font></p> 
+					<script>
+							setInterval(function() {
+							document.getElementById('timenow').innerHTML = Date()
+							document.getElementById("timenow").style.color = "yellow";
+							}, 1000);
+							which = 1
+							setInterval(function(){
+								var whichBanner = document.getElementById("homeBanner");
+								if (which == 1){
+									whichBanner.src = "img/Home-Banner.png";
+									which = 2;
+								}
+								else if(which == 2){
+									whichBanner.src = "img/Home-Banner2.jpg";
+									which = 1;
+								}
+							}, 2000);
+					</script>
+					</td>
+				</tr>
+			</table>
+			<hr color="grey"/>
+			<table align="center">
+				<tr>
+					<td align="center">
+						<ul>
+						<li><a href="index.html">Home</a> |</li>
+						<li><a href="contact.html">Contact</a> |</li>
+						<li><a class="active" href="videos.html">Videos</a> |</li>
+						<li><a href="downloads.html">Downloads</a> |</li>
+						<li><a href="Ariel.html">Temp</a> |</li>
+						<li><a href="register.html">Register</a> |</li>
+						<li><a href="games.html">Games</a> </li>
+					</ul>
+					</td>
+				</tr>
+			</table>
+			<h1>
+				 Videos!	
+			</h1>
+			<hr color="grey"/>
+			<hr color="grey"/>
+			<hr color="grey"/>
+		</center>
+		<a href="ad.html" target="_blank"><img src="img/login_image1.png" title="https://facebook.com" align="left" height="500px"/></a>
+		<br />
+		<table align="center">
+			<tr align="center">
+				<td>
+					<p> <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" target="_blank"> Shape Of You - Ed Sheeran </a></p>
+				</td>
+				<td>
+					<p> <a href="https://www.youtube.com/watch?v=34Na4j8AVgA" target="_blank"> Starboy - The Weeknd </a></p>
+				</td>
+				<td>
+					<p> <a href="https://www.youtube.com/watch?v=CW5oGRx9CLM" target="_blank"> False Alarm - The Weeknd </a></p>
+				</td>
+				<td>
+					<p> <a href="" target="_blank">  </a></p>
+				</td>
+			</tr>
+			<tr align="center">
+				<td>
+					<video width="320" height="240" controls>
+					<source src="mp4/shape_of_you.mp4" type="video/mp4">
+					Your browser does not support the video tag. </video>
+				</td>
+				<td>
+					<video width="320" height="240" controls>
+					<source src="mp4/starboy.mp4" type="video/mp4">
+					Your browser does not support the video tag. </video>
+				</td>
+				<td>
+					<video width="320" height="240" controls>
+					<source src="mp4/false_alarm.mp4" type="video/mp4">
+					Your browser does not support the video tag. </video>
+				</td>
+			</tr>
+		</table>
+    </body>
+</html>

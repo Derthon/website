@@ -1,0 +1,36 @@
+h1  {
+		font-size:50px;
+		font-weight:strong;
+		letter-spacing:15px;
+		color:#dbddd9;
+			}
+p {
+		color:white;
+		font-family: "Times New Roman", Arial, Serif;
+	}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+	align:center;
+    float: left;
+}
+
+li a {
+    display: block;
+	background-color: black;
+	opacity: .9;
+	color: white;
+    padding: 20px;
+    font-size: 20pt;
+}
+a:hover {
+	color: #0CFF00;
+}
+.active {
+    background-color: #4CAF50;
+}
